@@ -1,0 +1,9 @@
+var merge = require('webpack-merge')
+var prodEnv = require('./prod.env')
+
+module.exports = merge(prodEnv, {
+    NODE_ENV: '"development"',
+    BASE_URL: '"http://localhost:9000/api"',
+    APP_NAME: '"参知数据"',
+    WEB_URL: '"http://localhost:8000"',
+})

@@ -1,0 +1,54 @@
+# 项目名称
+app : AIMI-API
+
+# 版本
+version: "0.1.0"
+
+# 监听端口
+listen: "localhost:3008"
+
+# 是否生产环境
+production: true
+
+# token 密钥
+token_secret_key: ""
+token_expires_in: 2592000
+
+
+# 数据库名
+db: mysql
+# 数据库地址
+db_host: "localhost:3306"
+db_name: "aimi"
+db_user_name: "root"
+db_password: "123456"
+db_show_sql: true
+db_show_debug: true
+db_show_error: true
+db_show_warn: true
+db_backup_path: "backup"
+
+# 阿里云
+aliyun_ak: ""
+aliyun_sk: ""
+aliyun_sign_name: "艾米数据"
+aliyun_template_name: "SMS_82425006"
+
+# 七牛ak
+qiniu_ak: ""
+# 七牛sk
+qiniu_sk: ""
+# 七牛bucket
+qiniu_bucket: "test"
+# 七牛bucket的url
+qiniu_url: "https://imgs.amshuju.com"
+# 七牛form上传路径
+qiniu_upload_url: "http://upload.qiniu.com/"
+# 七牛token有效时间(秒)
+qiniu_expires: 36000
+# 七牛上传后回调路径
+qiniu_callback_url: "http://e4991439.ngrok.io/api/files/callback"
+
+
+mp_app_id: ""
+mp_app_secret: ""

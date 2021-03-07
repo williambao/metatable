@@ -1,0 +1,115 @@
+@import '~view-design/src/styles/index.less';
+html {
+    // font-size: 16px;
+}
+body {
+    // font-size: .875rem;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    margin:0;
+}
+
+[v-cloak], .v-cloak {
+    display: none;
+}
+
+// @primary-color: #45B34E;
+// @primary-color: #8aa891;
+// @primary-color: #dd985f;
+// @primary-color: rgb(15,136,229);
+
+@primary-color: #222;
+
+.text-primary {
+    color: @primary-color;
+}
+.text-gray {
+    // color: #dcdcdc;
+    color: #999;
+}
+.text-success { color: #19be6b}
+.text-warning { color: #ff9900}
+.text-error { color: #ed3f14}
+.text-center{
+    text-align:center;
+}
+// 经常用到float left的列表, 
+// 写成一个通用的.
+.clearfix {
+}
+.clearfix:after {
+    content: '';
+    display:block;
+    clear: both;
+}
+.pull-left {
+    float:left;
+}
+.right {
+    float:right;
+}
+
+
+.demo-spin-icon-load{
+    animation: ani-demo-spin 1s linear infinite;
+}
+@keyframes ani-demo-spin {
+    from { transform: rotate(0deg);}
+    50%  { transform: rotate(180deg);}
+    to   { transform: rotate(360deg);}
+}
+
+
+.center {
+    text-align: center;
+}
+
+.ivu-date-picker-cells {
+    white-space: normal !important;
+}
+
+.ivu-badge-dot  {
+    background: #dd985f !important;
+}
+
+
+.column {
+    float: left;
+    border-right: 1px solid #d7dde4;
+}
+.cell {
+    height: 40px;
+    border-bottom: 1px solid #d7dde4;
+}
+
+.m-t-md {
+    margin-top: 15px;
+}
+.men {
+    background-color: #bcdfc3;
+}
+.women {
+    background-color: #FE84CD;
+}
+.unknown {
+    background-color: #d6d6d6;
+}
+
+// overwrite 
+.ivu-checkbox-inner {
+    width: 16px;
+    height: 16px;
+}
+
+.home-body {
+    width: 100%;
+    background: url(../src/assets/home-bg.jpg) top center no-repeat #11214e;
+    background-size: cover;
+    min-height: 900px;
+    max-height: 1080px;
+}
+.pull-right {
+    float: right;
+}
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder {
+    color: #495059;
+}
